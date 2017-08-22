@@ -10,7 +10,7 @@
 
 body {
     background: url(../img/header-bg.jpg) no-repeat center top;
-    background-color: #f2f2f2;
+    background-color: #d0d0d0;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
@@ -53,7 +53,7 @@ body {
 
 .search-box{
   width: 40%;
-  min-width: 300px;
+  min-width: 280px;
 }
 
 .phrases{
@@ -61,6 +61,8 @@ body {
   width: 40%;
   margin-left: 10px;
   height: auto;
+  display: flex;
+  flex-flow: column;
 }
   .text-color{
     color: #ffffff;
@@ -70,7 +72,6 @@ body {
   @media screen and (max-width: 970px) {
     #headerwrap {
       flex-direction: column-reverse;
-      align-content: center;
     }
     .phrases{
       width: 95%;
@@ -79,14 +80,31 @@ body {
     }
   }
 
-  @media screen and (min-width: 1031px) {
+  @media (min-width: 972px) and (max-width: 1007px) {
+    .phrases{
+      height: 350px;
+    }
+  }
+
+  @media screen and (min-width: 1008px) {
     .phrases{
       height: 320px;
     }
   }
-
-  @media (min-width: 972px) and (max-width: 1019px) {
+  @media screen and (min-width: 1557px) {
     .phrases{
-      height: 340px
+      height: 300px;
+    }
+  }
+  @media (min-width: 1620px) {
+    .phrases{
+      height: 280px;
+    }
+  }
+
+/* buscador centrado */
+  @media (min-width: 400px) and (max-width: 1066px) {
+    .search-box{
+      align-self: center;
     }
   }
